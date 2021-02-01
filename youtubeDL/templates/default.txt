@@ -1,0 +1,35 @@
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div style="text-align:center;">
+<audio controls>
+  <source src="../static/mySong.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<br><br>
+<div style="text-align:center;"><a href="../static/mySong.mp3" download><p style="font-size:18px"><b>Download Here</b></p></a></div>
+<br><br>
+<div style="text-align:center;"><button type="button" onclick='window.location.replace("http://localhost:8000")'><p style="font-size:18px"><b>Start over</b></p></button></div>
+
+<style>
+  
+  button, a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, button:active, a:hover, a:active {
+  background-color: #484848;
+}
+audio:focus {
+    outline: none;
+}
+   body {
+  background: #282828;
+   }
+audio { width: 350px; }
+</style>

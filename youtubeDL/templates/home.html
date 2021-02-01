@@ -1,0 +1,41 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>
+YouTube-DL App
+</title>
+</head>
+<body>
+
+<form action="/external/" method="post">
+{% csrf_token %}
+<p align ="center">Enter A YouTube URL:</p>
+<p align="center"><input type="text"  autocomplete="off" name="param" required></p>
+{{data_external}}
+{{data1}}
+<p align="center"><input type="submit" value="Submit"></p>
+</form>
+
+<style>
+    body {
+  background: #282828;
+  color: white;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+}
+input, textarea {
+  font-size:22px;
+  display:block;
+  padding:5px 10px;
+  background:black;
+  background-image:none;
+  color: white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+
+  
+}
+</style>
+</body>
+</html>
+
