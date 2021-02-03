@@ -10,12 +10,15 @@ def button(request):
 
 def external(request):
    inp= request.POST.get('param')
-   f = open("URL.txt", "w")
-   f.write(inp)
-   f.close()
-   out= run([sys.executable,'./main.py',inp],shell=False)
-   print(out)
-   return render(request,'test.html')
+   if "youtube.com" not in inp: 
+    return render(request,'error.html')
+   else:
+    f = open("URL.txt", "w")
+    f.write(inp)
+    f.close()
+    out= run([sys.executable,'./main.py',inp],shell=False)
+    print(out)
+    return render(request,'test.html')
 
    
 
