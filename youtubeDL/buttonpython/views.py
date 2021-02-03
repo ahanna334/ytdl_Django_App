@@ -10,7 +10,7 @@ def button(request):
 
 def external(request):
    inp= request.POST.get('param')
-   if "youtube.com" not in inp: 
+   if "youtu" not in inp: 
     return render(request,'error.html')
    else:
     f = open("URL.txt", "w")
