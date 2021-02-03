@@ -29,8 +29,8 @@ if len(os.listdir('./static')) == 0:
         f.write(decode)
         f.close()
         os.rename("./static/" + okay, "./static/" + decode)
-    shutil.copy('./templates/default.txt', './templates/test.html')
-    time.sleep(1)
+        shutil.copy('./templates/default.txt', './templates/test.html')
+        time.sleep(1)
     with open('./templates/test.html','r') as f:
         newlines = []
         for line in f.readlines():
