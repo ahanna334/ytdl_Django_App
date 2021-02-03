@@ -31,3 +31,7 @@ https://github.com/ytdl-org/youtube-dl
 ![photo_1](https://github.com/ahanna334/ytdl_Django_App/blob/master/localhost_1.png)
 
 ![photo_2](https://github.com/ahanna334/ytdl_Django_App/blob/master/localhost2.png)
+
+![photo_3](https://github.com/ahanna334/ytdl_Django_App/blob/master/localhost3.png)
+
+![photo_4](https://github.com/ahanna334/ytdl_Django_App/blob/master/localhost4.png)
