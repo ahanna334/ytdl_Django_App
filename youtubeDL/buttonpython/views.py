@@ -9,7 +9,6 @@ def button(request):
 
 
 def external(request):
-  try:
    inp= request.POST.get('param')
    if "youtu" not in inp: 
     return render(request,'error.html')
@@ -20,9 +19,3 @@ def external(request):
     out= run([sys.executable,'./main.py',inp],shell=False)
     print(out)
     return render(request,'test.html')
-  except TypeError:
-    return render(request,'error.html')
-   
-
-   
-
