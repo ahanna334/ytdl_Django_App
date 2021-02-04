@@ -1,5 +1,9 @@
 # ytdl_DjangoApp
 
+To run:
+
+python manage.py runserver --insecure
+
 Music:
 
 MIDNIGHT CVLT x Simon Beatz - One Shot [NCS Release]
