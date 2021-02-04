@@ -9,13 +9,16 @@ def button(request):
 
 
 def external(request):
-   inp= request.POST.get('param')
-   if "youtu" not in inp: 
-    return render(request,'error.html')
-   else:
-    f = open("URL.txt", "w")
-    f.write(inp)
-    f.close()
-    out= run([sys.executable,'./main.py',inp],shell=False)
-    print(out)
-    return render(request,'test.html')
+   try:
+    inp= request.POST.get('param')
+    if "youtu" not in inp: 
+     return render(request,'error.html')
+    else:
+     f = open("URL.txt", "w")
+     f.write(inp)
+     f.close()
+     out= run([sys.executable,'./main.py',inp],shell=False)
+     print(out)
+     return render(request,'test.html')
+   except TypeError:
+     return render(request,'error.html')
